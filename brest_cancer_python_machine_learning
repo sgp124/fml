@@ -263,6 +263,10 @@ sns.heatmap(cm,annot = True)
 
 print(classification_report(y_test , y_predict))
 
+
+
+#if above print gives less than 92-95 % result then follow below prediction method
+
 param_grid = {'C':[0.1,1,10,100] , 'gamma' : [1,0.1,0.01,0.001],'kernal' :['rbf']}
 
 from sklearn.model_selection import GridSearchCV
